@@ -11,8 +11,8 @@
             "server": "javalibrary.ctcoc0qicfi5.eu-central-1.rds.amazonaws.com",
             "port": 3306,
             "driver": "MySQL",
-            "name": "javalibrary",
-            "database": "javalibrary",
+            "name": "JavaLibrary",
+            "database": "JavaLibrary",
             "username": "admin"
         }
     ]
