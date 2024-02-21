@@ -1,6 +1,7 @@
 package com.example.JavaLibrary.book;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.lang.NonNull;
@@ -27,6 +28,11 @@ public class BookController {
     @GetMapping
     public List<Book> getBooks() {
         return bookService.getBooks();
+    }
+
+    @GetMapping(path = "{bookId}")
+    public Optional<Book> getBookById(@PathVariable("bookId") @NonNull Long bookId) {
+        return bookService.getBookById(bookId);
     }
 
     @PostMapping

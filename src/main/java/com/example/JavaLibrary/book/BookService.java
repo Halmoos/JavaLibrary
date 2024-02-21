@@ -23,6 +23,10 @@ public class BookService {
         return bookRepository.findAll();
     }
 
+    public Optional<Book> getBookById(@NonNull Long bookId) {
+        return bookRepository.findById(bookId);
+    }
+
     public void addBook (Book book){
         Optional<Book> bookOptional = bookRepository.findBookByName(book.getName());
         if (bookOptional.isPresent()) {
@@ -64,5 +68,6 @@ public class BookService {
             book.setGenre(updatedBook.getGenre());
         }
     }
+    
     
 }
