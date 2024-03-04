@@ -27,12 +27,13 @@ public class BookService {
         return bookRepository.findById(bookId);
     }
 
-    public void addBook (Book book){
+    public Book addBook (Book book){
         Optional<Book> bookOptional = bookRepository.findBookByName(book.getName());
         if (bookOptional.isPresent()) {
             throw new IllegalStateException("Book name is already taken");
         }
         bookRepository.save(book);
+        return book;
     }
 
     public void deleteBook(@NonNull Long bookId) {
