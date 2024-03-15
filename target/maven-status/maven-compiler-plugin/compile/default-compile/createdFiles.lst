@@ -1,0 +1,6 @@
+com/example/JavaLibrary/book/BookRepository.class
+com/example/JavaLibrary/JavaLibraryApplication.class
+com/example/JavaLibrary/listener/DatabaseSeeder.class
+com/example/JavaLibrary/book/BookController.class
+com/example/JavaLibrary/book/Book.class
+com/example/JavaLibrary/book/BookService.class
