@@ -1,6 +1,9 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      java: openjdk21
   build:
     commands:
       - echo Entered the build phase...
