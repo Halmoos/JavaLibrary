@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: correctto21
+      java: corretto21
   build:
     commands:
       - echo Entered the build phase...
