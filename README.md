@@ -1,6 +1,7 @@
 Dummy app made for test development practice
 
 To use this app:
+
 1- Clone the repo
 
 2- Open a local mysql database
